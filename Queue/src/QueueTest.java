@@ -24,5 +24,12 @@ public class QueueTest {
         queue.print();
         System.out.println(queue.empty());
         System.out.println(queue.size());
+        queue.enqueue(100);
+        queue.enqueue(200);
+        queue.enqueue(303);
+        queue.enqueue(400);
+        queue.enqueue(500);
+        queue.clear();
+        queue.peek();
     }
 }

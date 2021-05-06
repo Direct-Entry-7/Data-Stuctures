@@ -34,11 +34,16 @@ public class Queue {
     }
 
     public int peek(){
-        return 0;
+        if(empty()) {
+            System.out.println("Queue is empty");
+            return -1;
+        }
+
+        return queue[queue.length-1];
     }
 
     public void clear(){
-
+        queue =null;
     }
 
     public int size(){
