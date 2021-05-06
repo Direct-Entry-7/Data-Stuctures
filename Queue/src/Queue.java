@@ -15,7 +15,18 @@ public class Queue {
     }
 
     public void dequeue(){
-
+        if(empty()){
+            System.err.println("Cannot remove element from empty Queue");
+            return;
+        } else if(queue.length ==1){
+            queue = null;
+            return;
+        }
+        int[] temp = new int[queue.length-1];
+        for (int i = 0; i < queue.length-1; i++) {
+            temp[i] = queue[i+1];
+        }
+        queue = temp;
     }
 
     public boolean empty(){
@@ -35,9 +46,13 @@ public class Queue {
     }
 
     public void print(){
+        if (empty()){
+            System.out.println("[]");
+            return;
+        }
         System.out.print("[");
-        for (int i = 0; i < queue.length; i++) {
-            System.out.print(queue[i]+", ");
+        for (int i = queue.length - 1; i >=0 ; i--) {
+            System.out.print(queue[i] + ", ");
         }
         System.out.println("\b\b]");
     }

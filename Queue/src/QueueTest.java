@@ -11,5 +11,18 @@ public class QueueTest {
         queue.print();
         System.out.println(queue.empty());
         System.out.println(queue.size());
+        queue.dequeue();
+        queue.print();
+        System.out.println(queue.empty());
+        System.out.println(queue.size());
+        queue.dequeue();
+        queue.dequeue();
+        queue.dequeue();
+        queue.dequeue();
+        queue.dequeue();
+        queue.dequeue();
+        queue.print();
+        System.out.println(queue.empty());
+        System.out.println(queue.size());
     }
 }
