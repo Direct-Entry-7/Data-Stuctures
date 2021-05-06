@@ -19,7 +19,7 @@ public class Queue {
     }
 
     public boolean empty(){
-        return false;
+        return queue == null;
     }
 
     public int peek(){
@@ -31,7 +31,7 @@ public class Queue {
     }
 
     public int size(){
-        return 0;
+        return  empty() ? 0: queue.length;
     }
 
     public void print(){
