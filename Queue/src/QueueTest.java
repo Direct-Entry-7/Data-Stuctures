@@ -26,10 +26,17 @@ public class QueueTest {
         System.out.println(queue.size());
         queue.enqueue(100);
         queue.enqueue(200);
-        queue.enqueue(303);
+        queue.enqueue(300);
         queue.enqueue(400);
         queue.enqueue(500);
         queue.clear();
-        queue.peek();
+        System.out.println(queue.peek());
+        queue.enqueue(1000);
+        queue.enqueue(2000);
+        queue.enqueue(3000);
+        queue.enqueue(4000);
+        queue.enqueue(5000);
+        queue.print();
+        System.out.println(queue.contains(1000));
     }
 }
