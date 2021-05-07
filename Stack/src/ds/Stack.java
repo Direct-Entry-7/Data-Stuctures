@@ -1,3 +1,5 @@
+package ds;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -44,7 +46,7 @@ public class Stack {
 
     public int peek(){
         if (empty()){
-            System.err.println("Stack is empty");
+            System.err.println("ds.Stack is empty");
         }
         return numbers[numbers.length - 1];
     }
