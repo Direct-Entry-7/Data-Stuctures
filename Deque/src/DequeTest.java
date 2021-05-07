@@ -7,5 +7,7 @@ public class DequeTest{
         deque.enqueue(40);
         deque.enqueue(50);
         deque.print();
+        deque.enqueueRear(60);
+        deque.print();
     }
 }
