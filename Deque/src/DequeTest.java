@@ -9,5 +9,15 @@ public class DequeTest{
         deque.print();
         deque.enqueueRear(60);
         deque.print();
+        deque.deQueueFront();
+        deque.deQueueFront();
+        deque.deQueueFront();
+        deque.deQueueFront();
+        deque.deQueueFront();
+        deque.print();
+        deque.deQueueFront();
+        deque.print();
+        deque.deQueueFront();
+        deque.print();
     }
 }
