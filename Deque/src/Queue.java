@@ -1,5 +1,5 @@
 public class Queue {
-    public int[] queue;
+    int[] queue;
     public void enqueue(int number){
         if(queue == null){
             queue = new int[1];

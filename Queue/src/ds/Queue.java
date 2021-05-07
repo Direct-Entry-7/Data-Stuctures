@@ -1,5 +1,7 @@
+package ds;
+
 public class Queue {
-    private int[] queue;
+    protected int[] queue;
     public void enqueue(int number){
         if(queue == null){
             queue = new int[1];

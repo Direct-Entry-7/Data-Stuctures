@@ -1,4 +1,7 @@
-public class Deque extends Queue{
+package ds2;
+import ds.Queue;
+
+public class Deque extends Queue {
     public void enqueueRear(int number){
         if (queue == null){
             queue = new int[1];
