@@ -6,10 +6,10 @@ public class Deque extends Queue{
             queue[0] = number;
         }else{
             int[] temp = new int[queue.length + 1];
-            for (int i = 0; i < queue.length; i++) {
+            for (int i = 1; i < queue.length; i++) {
                 temp[i] = queue[i];
             }
-            temp[temp.length - 1] = number;
+            temp[0] = number;
             queue = temp;
         }
     }
