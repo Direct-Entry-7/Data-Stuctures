@@ -9,6 +9,10 @@ public class DynamicArrayTest {
         dynamicArray.print();
         System.out.println(dynamicArray.empty());
         System.out.println(dynamicArray.size());
-        System.out.println(dynamicArray.size());
+//        dynamicArray.clear();
+//        System.out.println(dynamicArray.size());
+        System.out.println(dynamicArray.contains(10));
+        System.out.println(dynamicArray.get(1));
+
     }
 }

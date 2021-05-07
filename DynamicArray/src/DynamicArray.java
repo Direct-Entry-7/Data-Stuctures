@@ -38,4 +38,28 @@ public class DynamicArray {
     public void clear(){
         numbers = null;
     }
+
+    public boolean contains(int number){
+        if (empty()){
+            return false;
+        }
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] == number){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public int get(int index){
+        if(empty()){
+            throw new RuntimeException("Array is empty");
+        }
+
+        if (0 <= index && index <= numbers.length-1) {
+            return numbers[index];
+        } else{
+            throw new ArrayIndexOutOfBoundsException("Index is Wrong");
+        }
+    }
 }
