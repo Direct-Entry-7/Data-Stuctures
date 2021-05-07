@@ -19,6 +19,10 @@ public class DynamicArray {
         return numbers == null;
     }
 
+    public int size(){
+        return empty() ? 0 :  numbers.length;
+    }
+
     public void print(){
         if (empty()){
             System.out.println("[]");
@@ -29,5 +33,9 @@ public class DynamicArray {
             System.out.print(numbers[i] + ", ");
         }
         System.out.println("\b\b]");
+    }
+
+    public void clear(){
+        numbers = null;
     }
 }

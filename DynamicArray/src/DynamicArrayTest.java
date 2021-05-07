@@ -7,5 +7,8 @@ public class DynamicArrayTest {
         dynamicArray.add(40);
         dynamicArray.add(50);
         dynamicArray.print();
+        System.out.println(dynamicArray.empty());
+        System.out.println(dynamicArray.size());
+        System.out.println(dynamicArray.size());
     }
 }
