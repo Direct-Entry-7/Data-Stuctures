@@ -1,3 +1,5 @@
+import ds.DynamicArray;
+
 public class DynamicArrayTest {
     public static void main(String[] args) {
         DynamicArray dynamicArray = new DynamicArray();
@@ -13,6 +15,8 @@ public class DynamicArrayTest {
 //        System.out.println(dynamicArray.size());
         System.out.println(dynamicArray.contains(10));
         System.out.println(dynamicArray.get(1));
-
+        dynamicArray.add(0,100);
+        dynamicArray.remove(2);
+        dynamicArray.print();
     }
 }
