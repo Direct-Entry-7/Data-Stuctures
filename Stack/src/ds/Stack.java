@@ -46,7 +46,7 @@ public class Stack {
 
     public int peek(){
         if (empty()){
-            System.err.println("ds.Stack is empty");
+            throw new RuntimeException("Stack is empty");
         }
         return numbers[numbers.length - 1];
     }

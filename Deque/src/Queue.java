@@ -1,5 +1,5 @@
 public class Queue {
-    int[] queue;
+    protected int[] queue;
     public void enqueue(int number){
         if(queue == null){
             queue = new int[1];
@@ -9,7 +9,7 @@ public class Queue {
             for (int i = 0; i < queue.length; i++) {
                 temp[i] = queue[i];
             }
-            temp[queue.length] = number;
+            temp[temp.length-1] = number;
             queue = temp;
         }
     }
@@ -23,7 +23,7 @@ public class Queue {
             return;
         }
         int[] temp = new int[queue.length-1];
-        for (int i = 0; i < queue.length-1; i++) {
+        for (int i = 0; i < queue.length; i++) {
             temp[i] = queue[i+1];
         }
         queue = temp;
@@ -65,7 +65,7 @@ public class Queue {
         if(empty()){
             return false;
         }
-        
+
         for (int i = 0; i < queue.length; i++) {
             if(queue[i] == number)
                 return true;

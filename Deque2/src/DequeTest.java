@@ -1,4 +1,4 @@
-package ds2;
+import ds2.Deque;
 
 public class DequeTest {
     public static void main(String[] args) {

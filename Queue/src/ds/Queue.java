@@ -11,7 +11,7 @@ public class Queue {
             for (int i = 0; i < queue.length; i++) {
                 temp[i] = queue[i];
             }
-            temp[queue.length] = number;
+            temp[temp.length-1] = number;
             queue = temp;
         }
     }
@@ -25,7 +25,7 @@ public class Queue {
             return;
         }
         int[] temp = new int[queue.length-1];
-        for (int i = 0; i < queue.length-1; i++) {
+        for (int i = 0; i < queue.length; i++) {
             temp[i] = queue[i+1];
         }
         queue = temp;
