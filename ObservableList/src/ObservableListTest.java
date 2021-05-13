@@ -1,0 +1,6 @@
+public class ObservableListTest {
+    public static void main(String[] args) {
+        System.out.println("Working");
+
+    }
+}
